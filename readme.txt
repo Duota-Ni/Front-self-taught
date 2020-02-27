@@ -5,4 +5,4 @@ Git tracks changes of files.
 Yangyang is my boy god!
 Crystal is my girl god!
 I am very happy today.
-Creating a new branch is quick & simple.
+Creating a new branch is quick and simple.
