@@ -6,3 +6,4 @@ Yangyang is my boy god!
 Crystal is my girl god!
 I am very happy today.
 Creating a new branch is quick and simple.
+A test of fast forward.
