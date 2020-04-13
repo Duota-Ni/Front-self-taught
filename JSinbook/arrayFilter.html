@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>数组filter方法</title>
+    <script>
+
+        const carts = [];
+        for (let suit of ['H', 'C', 'D', 'S'])
+            for (let value = 1; value <= 13; value++)
+                carts.push({ suit, value });
+
+        //console.log(carts);
+
+        console.log(carts.filter(c => c.value === 2));
+        console.log(carts.filter(c => c.suit === 'D'));
+        console.log(carts.filter(c => c.value > 10));
+        console.log(carts.filter(c => c.value > 10 && c.suit === 'H'));
+
+        console.log(
+            carts.filter(function (c) {
+                return c.value === 2;
+            })
+        )
+
+
+        function cartToString(c) {
+            const suits = { 'H': '\u2665', 'C': '\u2663', 'D': '\u2666', 'S': '\u2660', };
+            const values = { 1: 'A', 11: 'J', 12: 'Q', 13: 'K' };
+            for (let i = 2; i <= 10; i++) values[i] = i;
+            return values[c.value] + suits[c.suit];
+        }
+
+        console.log(
+            carts.filter(c => c.value === 2)
+                .map(cartToString)
+        );
+
+        console.log(
+            carts.filter(c => c.value > 10 && c.suit === 'H')
+                .map(cartToString)
+        );
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
