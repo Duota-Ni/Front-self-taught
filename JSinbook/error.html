@@ -4,13 +4,30 @@
 <head>
     <title>异常</title>
     <script>
-      
+        function validateEmail(email) {
+            return email.match(/@/) ?
+                email :
+                new Error(`invalid email:${email}`);
+        }
+        const email = 'jane@doe.com'//正确，输出20行内容
+        //const email = 'janedoe.com';//错误，没有匹配@,输出18行内容
+        //const email = null;//错误，为null,不执行if语句，直接跳到catch,输出23行内容
+        try {
+            const validatedEmail = validateEmail(email);
+            if (validatedEmail instanceof Error) {
+                console.error(`Error:${validatedEmail.message}`);
+            } else {
+                console.log(`Valid email:${validatedEmail}`);
+            }
+        } catch (err) {
+            console.error(`Error:${err.message}`);
+        }
 
     </script>
 </head>
 
 <body>
-   
+
 </body>
 
 </html>
