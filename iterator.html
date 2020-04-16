@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script>
+        const book = [
+            'Twinkle, twinkle, little star',
+            'How I wonder what you are',
+            'Up above the world so high',
+            'Like a diamond in the sky.',
+            'Twinkle, twinkle, little star',
+            'How I wonder what you are',
+            'When the blazing sun is gone,',
+            'When he nothing shines upon',
+            'Then you show your little light'
+        ];
+        const it = book.values();
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+        console.log(it.next());
+
+        console.log('while遍历');
+
+        const it0 = book.values();
+        let current = it0.next();
+        while (!current.done) {
+            console.log(current.value);
+            current = it0.next();
+        }
+
+        /*
+        console.log('Log类，时间戳');
+
+        class Log {
+            constructor() {
+                this.messages = [];
+            }
+            add(message) {
+                this.messages.push({ message,timestamp:Date.now() });
+            }
+            [Symbol.iterator]() {
+                return this.messages.values();
+            }
+        }
+        const log = new Log();
+        log.add('introduce Crystal Liu');
+        log.add('introduce YangYang');
+        log.add('introduce Zoro');
+
+        for (let entry of log) {
+            console.log(`${entry.message}@${entry.timestamp}`);
+        }
+*/
+        console.log('自己的迭代器,Log类，时间戳');
+        class Log {
+            constructor() {
+                this.messages = [];
+            }
+            add(message) {
+                this.messages.push({ message, timestamp: Date.now() });
+            }
+            [Symbol.iterator]() {
+                let i = 0;
+                const messages = this.messages;
+                return {
+                    next() {
+                        if (i >= messages.length)
+                            return { value: undefined, done: true };
+                        return { value: messages[i++], done: false };
+                    }
+                }
+            }
+        }
+        const log = new Log();
+        log.add('introduce Crystal Liu');
+        log.add('introduce YangYang');
+        log.add('introduce Zoro');
+        for (let entry of log) {
+            console.log(`${entry.message}@${entry.timestamp}`);
+        }
+
+        console.log('斐波那契数列')
+        class FibonacciSequence{
+            constructor(){}
+            [Symbol.iterator](){
+                let a = 0 , b=1;
+                return{
+                    next(){
+                        let rval = {value:b,done:false};
+                        b+=a;
+                        a=rval.value;
+                        return rval;
+                    }
+                };
+            }
+        }
+        const fib = new FibonacciSequence();
+        let j =0;
+        for(let n of fib){
+            console.log(n);
+            if(++j > 9) break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
