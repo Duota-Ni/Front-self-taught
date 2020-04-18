@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>回调函数</title>
+    <script>
+      /*  console.log("Before timeout:" + new Date());
+        function f(){
+            console.log("After timeout" + new Date());
+        }
+        setTimeout(f,10*1000);
+        console.log("I happen after setTimeOUT!");
+        console.log("Me too!");
+        */
+
+        console.log("Before timeout:" + new Date());
+        setTimeout(function(){
+            console.log("After timeout" + new Date());
+        },10*1000);
+        console.log("I happen after setTimeOUT!");
+        console.log("Me too!");
+    </script>
+</head>
+
+<body></body>
+
+</html>
