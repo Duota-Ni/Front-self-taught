@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<!--有bug,还没学会用nodejs-->
+<head>
+    <title>14.2.3错误优先回调</title>
+    <script>
+       const fs = require('fs');
+       const fname = 'may_or_may_not_exist.txt';
+       fs.readFile(fname,function(){
+           if(err) return console.error(`erroe reading file ${fname}:${err.message}`);
+           console.log(`${fname} contents:${data}`);
+       });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
