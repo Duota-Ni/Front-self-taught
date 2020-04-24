@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<script type="text/javascript">
+var myDate=new Date();
+
+console.log(myDate);
+
+function getToday(){
+  var now = new Date();
+  var y = now.getFullYear();
+  var m =now.getMonth();
+  var d = now.getDate();
+  var today = y+'/'+m+'/'+d;
+  return today;
+}
+function getFullYear(){
+  var now = new Date();
+  var y = now.getFullYear();
+  return y;
+}
+
+function dateDiff(sDate1,sDate2){
+ // sDate1 = sDate1.replace(/-/g,'/');
+ // sDate2 = sDate2.replace(/-/g,'/');
+  var oDate1 = new Date(sDate1);
+  var oDate2 = new Date(sDate2);
+  var iDays = parseInt((oDate1-oDate2)/1000/3600/24);
+  return iDays;
+}
+var i= getToday();
+var test = dateDiff(2020-04-25,i);
+console.log(test);
+
+</script>
+
+</body>
+</html>
