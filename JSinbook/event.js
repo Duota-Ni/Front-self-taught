@@ -1,5 +1,3 @@
-//var eventEmitter = require("event");
-//var EventEmitter = new eventEmitter();
 const EventEmitter = require('events').EventEmitter;
 
        class Countdown extends EventEmitter{
