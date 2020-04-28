@@ -31,15 +31,57 @@ function grun(g){
     })();
 }
 
-
+/*
 //迭代
 function* theFutureIsNow(){
     const dataA = yield nfcall(fs.readFile,'a.txt');
     const dataB = yield nfcall(fs.readFile,'b.txt');
     const dataC = yield nfcall(fs.readFile,'c.txt');
-    yield ptimeout(60*1000);
+    yield ptimeout(6*1000);
     yield nfcall(fs.writeFile,'d.txt',dataA+dataB+dataC);
 }
+*/
+
+/*
+//Promise.all
+function* theFutureIsNow(){
+    const data = yield Promise.all([
+        nfcall(fs.readFile,'a.txt'),
+        nfcall(fs.readFile,'b.txt'),
+        nfcall(fs.readFile,'c.txt'),
+    ]);
+    yield ptimeout(6*1000);
+    yield nfcall(fs.writeFile,'d.txt',data[0]+data[1]+data[2]);
+}
+*/
+
+//添加异常处理
+function* theFutureIsNow(){
+    let data ;
+    try{
+        data = yield Promise.all([
+            nfcall(fs.readFile,'a.txt'),
+            nfcall(fs.readFile,'b.txt'),
+            nfcall(fs.readFile,'c.txt'),
+        ]);
+    }catch(err){
+        console.error('Unable to read one or more input files:'+err.message);
+        throw err;
+    }
+    
+    yield ptimeout(6*1000);
+    try {
+        yield nfcall(fs.writeFile,'d.txt',data[0]+data[1]+data[2]);
+    } catch (err) {
+        console.error('Unable towrite output files:'+err.message);
+        throw err;
+    }
+}
+   
 
 let test = grun(theFutureIsNow);
 console.log(test);
+
+
+
+
