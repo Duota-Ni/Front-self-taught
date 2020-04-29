@@ -5,13 +5,17 @@
    </head>
    <body style="height: 100%; margin: 0">
        <div id="container" style="height: 100%"></div>
+       <!--
+             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>   
+       -->
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+       <!--引入百度地图的jssdk，这里需要使用你在百度地图开发者平台申请的 ak-->
        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+       <!-- 引入百度地图扩展  参见https://github.com/apache/incubator-echarts/tree/master/extension/bmap-->
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
        <script type="text/javascript">
 var dom = document.getElementById("container");
@@ -428,9 +432,13 @@ option = {
         trigger: 'item'
     },
     bmap: {
+        //百度地图中心经纬的度
         center: [104.114129, 37.550339],
+        //百度地图缩放
         zoom: 5,
+        //是否开启拖拽缩放，可以只设置'scale'和'move'
         roam: true,
+          // 百度地图的自定义样式，见 http://developer.baidu.com/map/jsdevelop-11.htm
         mapStyle: {
             styleJson: [{
                 'featureType': 'water',
@@ -534,10 +542,15 @@ option = {
     series : [
         {
             name: 'pm2.5',
-            type: 'scatter',
+            type: 'scatter',//散点/气泡图
+            //使用百度地图坐标系
             coordinateSystem: 'bmap',
+            // 数据格式跟在 geo 坐标系上一样，每一项都是 [经度，纬度，数值大小，其它维度...]
             data: convertData(data),
+            //标记的大小
             symbolSize: function (val) {
+                //val等于上面那行的data: convertData(data),
+                //console.log(val);
                 return val[2] / 10;
             },
             label: {
@@ -559,8 +572,10 @@ option = {
             type: 'effectScatter',
             coordinateSystem: 'bmap',
             data: convertData(data.sort(function (a, b) {
+                console.log(a);
+                console.log(b);
                 return b.value - a.value;
-            }).slice(0, 6)),
+            }).slice(0, 5)),
             symbolSize: function (val) {
                 return val[2] / 10;
             },

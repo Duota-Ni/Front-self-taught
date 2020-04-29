@@ -6,14 +6,15 @@
     <title>中国地图echarts实现</title>
     <!-- 引入 ECharts 文件 -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
-       <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
-   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/echarts@4.7.0/map/js/province/guangdong.js'></script>
     <!--
          <script type="text/javascript" src="echarts.js"></script>
         <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
@@ -24,12 +25,12 @@
 </head>
 
 <body style="height: 100%; margin: 0">
-    
+
     <div id="container"
-            style="position: relative; overflow: hidden; width: 1000px; height: 1000px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
-            <canvas
-                style="position: absolute; left: 0px; top: 0px; width: 1000px; height: 1000px; user-select: none; padding: 0px; margin: 0px; border-width: 0px;"
-                data-zr-dom-id="zr_0" width="1000" height="1000"></canvas></div>
+        style="position: relative; overflow: hidden; width: 1000px; height: 1000px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+        <canvas
+            style="position: absolute; left: 0px; top: 0px; width: 1000px; height: 1000px; user-select: none; padding: 0px; margin: 0px; border-width: 0px;"
+            data-zr-dom-id="zr_0" width="1000" height="1000"></canvas></div>
     <script>
         // 基于准备好的dom，初始化echarts实例
         var dom = document.getElementById("container");
@@ -84,11 +85,11 @@
         var provinces = ['shanghai', 'hebei', 'shanxi', 'neimenggu', 'liaoning', 'jilin', 'heilongjiang', 'jiangsu', 'zhejiang', 'anhui', 'fujian', 'jiangxi', 'shandong', 'henan', 'hubei', 'hunan', 'guangdong', 'guangxi', 'hainan', 'sichuan', 'guizhou', 'yunnan', 'xizang', 'shanxi1', 'gansu', 'qinghai', 'ningxia', 'xinjiang', 'beijing', 'tianjin', 'chongqing', 'xianggang', 'aomen'];
         var provincesText = ['上海', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江', '江苏', '浙江', '安徽', '福建', '江西', '山东', '河南', '湖北', '湖南', '广东', '广西', '海南', '四川', '贵州', '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆', '北京', '天津', '重庆', '香港', '澳门'];
 
-        myChart.on('click',function(param){
+        myChart.on('click', function (param) {
             //alert(param.name);
             //遍历取到procincesText中的下标 去拿到对应的省的js
-            for(var i = 0;i<provincesText.length;i++){
-                if(param.name==provincesText[i]){
+            for (var i = 0; i < provincesText.length; i++) {
+                if (param.name == provincesText[i]) {
                     showProvince(provinces[i]);
                     break;
                 }
@@ -96,10 +97,32 @@
         });
 
         //展示对应的省
-        function showProvince(pName){
+        function showProvince(pName) {
             //这写省份的js都是通过在线构建工具生成的，保存在本地，需要时加载使用，最好不要一开始就直接全部引用
-            loadBdScript('$'+)
+            loadBdScript('$' + pName + 'JS', 'province/' + pName + '.js', function () {
+                initEcharts(pName);
+            });
         }
+        //加载对应的JS
+        function loadBdScript(scriptId, url, callback) {
+            var script = document.createElement("script")
+            script.type = "text/javascript";
+            if (script.readyState) {  //IE  
+                script.onreadystatechange = function () {
+                    if (script.readyState == "loaded" || script.readyState == "complete") {
+                        script.onreadystatechange = null;
+                        callback();
+                    }
+                };
+            } else {  //Others  
+                script.onload = function () {
+                    callback();
+                };
+            }
+            script.src = url;
+            script.id = scriptId;
+            document.getElementsByTagName("head")[0].appendChild(script);
+        };
     </script>
 </body>
 
