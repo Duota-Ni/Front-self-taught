@@ -1,0 +1,767 @@
+{
+  "code": "1",
+  "data": {
+    "advertisement": {
+      "advList": [],
+      "count": 0,
+      "error": "",
+      "success": true
+    },
+    "basic": {
+      "actors": [
+        {
+          "actorId": 896202,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153815.90381680_1280X720X2.jpg",
+          "name": "马龙·白兰度",
+          "nameEn": "Marlon Brando",
+          "roleImg": "http://img31.mtime.cn/mg/2014/07/14/130953.96053994.jpg",
+          "roleName": "维托"
+        },
+        {
+          "actorId": 901967,
+          "img": "http://img31.mtime.cn/ph/2016/08/31/093257.11362161_1280X720X2.jpg",
+          "name": "阿尔·帕西诺",
+          "nameEn": "Al Pacino",
+          "roleImg": "http://img31.mtime.cn/mg/2013/12/23/134205.67688430.jpg",
+          "roleName": "迈克尔"
+        },
+        {
+          "actorId": 920470,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153816.44227745_1280X720X2.jpg",
+          "name": "詹姆斯·卡恩",
+          "nameEn": "James Caan",
+          "roleImg": "http://img31.mtime.cn/mg/2013/12/23/134635.31589937.jpg",
+          "roleName": "桑尼"
+        },
+        {
+          "actorId": 905201,
+          "img": "http://img31.mtime.cn/ph/2014/12/12/095257.52752625_1280X720X2.jpg",
+          "name": "罗伯特·杜瓦尔",
+          "nameEn": "Robert Duvall",
+          "roleImg": "http://img31.mtime.cn/mg/2013/12/23/135011.47576862.jpg",
+          "roleName": "汤姆·哈根"
+        },
+        {
+          "actorId": 902326,
+          "img": "http://img5.mtime.cn/ph/2017/01/05/095846.31642673_1280X720X2.jpg",
+          "name": "黛安·基顿",
+          "nameEn": "Diane Keaton",
+          "roleImg": "http://img31.mtime.cn/mg/2013/12/23/135123.30567739.jpg",
+          "roleName": "凯·亚当斯"
+        },
+        {
+          "actorId": 1079784,
+          "img": "http://img31.mtime.cn/ph/1784/1079784/1079784_1280X720X2.jpg",
+          "name": "艾尔·勒提埃里",
+          "nameEn": "Al Lettieri",
+          "roleImg": "",
+          "roleName": "Sollozzo"
+        },
+        {
+          "actorId": 976781,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153817.55286008_1280X720X2.jpg",
+          "name": "塔莉娅·夏尔",
+          "nameEn": "Talia Shire",
+          "roleImg": "",
+          "roleName": "Connie"
+        },
+        {
+          "actorId": 1039441,
+          "img": "http://img31.mtime.cn/ph/2015/09/21/090638.80798951_1280X720X2.jpg",
+          "name": "约翰·凯泽尔",
+          "nameEn": "John Cazale",
+          "roleImg": "",
+          "roleName": "Fredo"
+        },
+        {
+          "actorId": 954534,
+          "img": "http://img31.mtime.cn/ph/2015/07/21/150841.10031192_1280X720X2.jpg",
+          "name": "阿历克斯·罗克",
+          "nameEn": "Alex Rocco",
+          "roleImg": "",
+          "roleName": "Moe Greene"
+        },
+        {
+          "actorId": 892790,
+          "img": "http://img31.mtime.cn/ph/2014/03/26/201501.93383905_1280X720X2.jpg",
+          "name": "索菲亚·科波拉",
+          "nameEn": "Sofia Coppola",
+          "roleImg": "",
+          "roleName": "Michael Francis Rizzi       (uncredited)"
+        },
+        {
+          "actorId": 1024282,
+          "img": "http://img31.mtime.cn/ph/282/1024282/1024282_1280X720X2.jpg",
+          "name": "乔·斯皮内尔",
+          "nameEn": "Joe Spinell",
+          "roleImg": "",
+          "roleName": "Willi Cicci       (uncredited)"
+        },
+        {
+          "actorId": 1039439,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153818.77920195_1280X720X2.jpg",
+          "name": "理查德·S·卡斯特拉诺",
+          "nameEn": "Richard S. Castellano",
+          "roleImg": "",
+          "roleName": "Clemenza       (as Richard Castellano)"
+        },
+        {
+          "actorId": 1047932,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153818.99248417_1280X720X2.jpg",
+          "name": "斯特林·海登",
+          "nameEn": "Sterling Hayden",
+          "roleImg": "",
+          "roleName": "Capt. McCluskey"
+        },
+        {
+          "actorId": 949956,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153818.80633094_1280X720X2.jpg",
+          "name": "约翰·马利",
+          "nameEn": "John Marley",
+          "roleImg": "",
+          "roleName": "Jack Woltz"
+        },
+        {
+          "actorId": 1038697,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153819.75774320_1280X720X2.jpg",
+          "name": "理查德·康特",
+          "nameEn": "Richard Conte",
+          "roleImg": "",
+          "roleName": "Barzini"
+        },
+        {
+          "actorId": 927290,
+          "img": "http://img31.mtime.cn/ph/2016/01/27/093416.68958842_1280X720X2.jpg",
+          "name": "阿贝·维高达",
+          "nameEn": "Abe Vigoda",
+          "roleImg": "",
+          "roleName": "Tessio"
+        },
+        {
+          "actorId": 952657,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153819.91077392_1280X720X2.jpg",
+          "name": "吉亚尼·卢索",
+          "nameEn": "Gianni Russo",
+          "roleImg": "",
+          "roleName": "Carlo"
+        },
+        {
+          "actorId": 1049024,
+          "img": "http://img31.mtime.cn/ph/1024/1049024/1049024_1280X720X2.jpg",
+          "name": "",
+          "nameEn": "Rudy Bond",
+          "roleImg": "",
+          "roleName": "Cuneo"
+        },
+        {
+          "actorId": 1039397,
+          "img": "http://img31.mtime.cn/ph/2014/03/14/153819.88555809_1280X720X2.jpg",
+          "name": "阿尔·马蒂诺",
+          "nameEn": "Al Martino",
+          "roleImg": "",
+          "roleName": "Johnny Fontane"
+        },
+        {
+          "actorId": 1081435,
+          "img": "http://img31.mtime.cn/ph/1435/1081435/1081435_1280X720X2.jpg",
+          "name": "",
+          "nameEn": "Morgana King",
+          "roleImg": "",
+          "roleName": "Mama Corleone"
+        }
+      ],
+      "attitude": -1,
+      "award": {
+        "awardList": [
+          {
+            "festivalId": 3,
+            "nominateAwards": [
+              {
+                "awardName": "奥斯卡奖-最佳男配角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "阿尔·帕西诺",
+                    "nameEn": "Al Pacino",
+                    "personId": 901967
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳男配角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "罗伯特·杜瓦尔",
+                    "nameEn": "Robert Duvall",
+                    "personId": 905201
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳男配角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "詹姆斯·卡恩",
+                    "nameEn": "James Caan",
+                    "personId": 920470
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳导演",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "弗朗西斯·福特·科波拉",
+                    "nameEn": "Francis Ford Coppola",
+                    "personId": 896804
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳服装设计",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "",
+                    "nameEn": "Anna Hill Johnstone",
+                    "personId": 1279694
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳音响",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "",
+                    "nameEn": "Charles Grenzbach",
+                    "personId": 1905712
+                  },
+                  {
+                    "nameCn": "",
+                    "nameEn": "Richard Portman",
+                    "personId": 1905760
+                  },
+                  {
+                    "nameCn": "",
+                    "nameEn": "Christopher Newman",
+                    "personId": 1098875
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳电影剪辑",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "",
+                    "nameEn": "William Reynolds",
+                    "personId": 1162754
+                  },
+                  {
+                    "nameCn": "",
+                    "nameEn": "Peter Zinner",
+                    "personId": 1040878
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳配乐（剧情类）",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "尼诺·罗塔",
+                    "nameEn": "Nino Rota",
+                    "personId": 1074074
+                  }
+                ],
+                "sequenceNumber": 45
+              }
+            ],
+            "nominateCount": 8,
+            "winAwards": [
+              {
+                "awardName": "奥斯卡奖-最佳影片",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "艾伯特·S·拉迪",
+                    "nameEn": "Albert S. Ruddy",
+                    "personId": 898055
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳男主角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "马龙·白兰度",
+                    "nameEn": "Marlon Brando",
+                    "personId": 896202
+                  }
+                ],
+                "sequenceNumber": 45
+              },
+              {
+                "awardName": "奥斯卡奖-最佳改编剧本",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "马里奥·普佐",
+                    "nameEn": "Mario Puzo",
+                    "personId": 896922
+                  },
+                  {
+                    "nameCn": "弗朗西斯·福特·科波拉",
+                    "nameEn": "Francis Ford Coppola",
+                    "personId": 896804
+                  }
+                ],
+                "sequenceNumber": 45
+              }
+            ],
+            "winCount": 3
+          },
+          {
+            "festivalId": 15,
+            "nominateAwards": [
+              {
+                "awardName": "电影类-剧情类最佳男主角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "阿尔·帕西诺",
+                    "nameEn": "Al Pacino",
+                    "personId": 901967
+                  }
+                ],
+                "sequenceNumber": 30
+              },
+              {
+                "awardName": "电影类-最佳男配角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "詹姆斯·卡恩",
+                    "nameEn": "James Caan",
+                    "personId": 920470
+                  }
+                ],
+                "sequenceNumber": 30
+              }
+            ],
+            "nominateCount": 2,
+            "winAwards": [
+              {
+                "awardName": "电影类-剧情类最佳影片",
+                "festivalEventYear": "1973",
+                "persons": [],
+                "sequenceNumber": 30
+              },
+              {
+                "awardName": "电影类-最佳导演",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "弗朗西斯·福特·科波拉",
+                    "nameEn": "Francis Ford Coppola",
+                    "personId": 896804
+                  }
+                ],
+                "sequenceNumber": 30
+              },
+              {
+                "awardName": "电影类-剧情类最佳男主角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "马龙·白兰度",
+                    "nameEn": "Marlon Brando",
+                    "personId": 896202
+                  }
+                ],
+                "sequenceNumber": 30
+              },
+              {
+                "awardName": "电影类-最佳编剧",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "弗朗西斯·福特·科波拉",
+                    "nameEn": "Francis Ford Coppola",
+                    "personId": 896804
+                  },
+                  {
+                    "nameCn": "马里奥·普佐",
+                    "nameEn": "Mario Puzo",
+                    "personId": 896922
+                  }
+                ],
+                "sequenceNumber": 30
+              },
+              {
+                "awardName": "电影类-最佳电影配乐",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "尼诺·罗塔",
+                    "nameEn": "Nino Rota",
+                    "personId": 1074074
+                  }
+                ],
+                "sequenceNumber": 30
+              }
+            ],
+            "winCount": 5
+          },
+          {
+            "festivalId": 21,
+            "nominateAwards": [
+              {
+                "awardName": "电影奖-最佳男主角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "马龙·白兰度",
+                    "nameEn": "Marlon Brando",
+                    "personId": 896202
+                  }
+                ],
+                "sequenceNumber": 26
+              },
+              {
+                "awardName": "电影奖-最佳男配角",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "罗伯特·杜瓦尔",
+                    "nameEn": "Robert Duvall",
+                    "personId": 905201
+                  }
+                ],
+                "sequenceNumber": 26
+              },
+              {
+                "awardName": "电影奖-最佳服装设计",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "",
+                    "nameEn": "Anna Hill Johnstone",
+                    "personId": 1279694
+                  }
+                ],
+                "sequenceNumber": 26
+              },
+              {
+                "awardName": "电影奖-最有前途新人主演",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "阿尔·帕西诺",
+                    "nameEn": "Al Pacino",
+                    "personId": 901967
+                  }
+                ],
+                "sequenceNumber": 26
+              }
+            ],
+            "nominateCount": 4,
+            "winAwards": [
+              {
+                "awardName": "安东尼·阿斯奎斯奖:最佳电影音乐",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "尼诺·罗塔",
+                    "nameEn": "Nino Rota",
+                    "personId": 1074074
+                  }
+                ],
+                "sequenceNumber": 26
+              }
+            ],
+            "winCount": 1
+          },
+          {
+            "festivalId": 30,
+            "nominateAwards": [
+              {
+                "awardName": "展映单元",
+                "festivalEventYear": "2015",
+                "persons": [],
+                "sequenceNumber": 5
+              }
+            ],
+            "nominateCount": 1,
+            "winAwards": [],
+            "winCount": 0
+          },
+          {
+            "festivalId": 37,
+            "nominateAwards": [],
+            "nominateCount": 0,
+            "winAwards": [
+              {
+                "awardName": "大卫奖-最佳外国电影",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "艾伯特·S·拉迪",
+                    "nameEn": "Albert S. Ruddy",
+                    "personId": 898055
+                  }
+                ],
+                "sequenceNumber": 17
+              },
+              {
+                "awardName": "大卫特别奖",
+                "festivalEventYear": "1973",
+                "persons": [
+                  {
+                    "nameCn": "阿尔·帕西诺",
+                    "nameEn": "Al Pacino",
+                    "personId": 901967
+                  }
+                ],
+                "sequenceNumber": 17
+              }
+            ],
+            "winCount": 2
+          }
+        ],
+        "totalNominateAward": 15,
+        "totalWinAward": 11
+      },
+      "bigImage": "http://img5.mtime.cn/mg/2018/01/14/144800.75620298.jpg",
+      "broadcastDes": "",
+      "commentSpecial": "",
+      "community": {},
+      "director": {
+        "directorId": 896804,
+        "img": "http://img31.mtime.cn/ph/2014/03/14/153814.86586505_1280X720X2.jpg",
+        "name": "弗朗西斯·福特·科波拉",
+        "nameEn": "Francis Ford Coppola"
+      },
+      "eggDesc": "",
+      "episodeCnt": "",
+      "festivals": [
+        {
+          "festivalId": 3,
+          "img": "http://img31.mtime.cn/mg/2014/02/24/144331.32490714.jpg",
+          "nameCn": "奥斯卡金像奖",
+          "nameEn": "Academy Awards",
+          "shortName": "奥斯卡"
+        },
+        {
+          "festivalId": 15,
+          "img": "http://img31.mtime.cn/mg/2014/02/24/145735.69166081.jpg",
+          "nameCn": "美国金球奖",
+          "nameEn": "Golden Globes, USA",
+          "shortName": "金球奖"
+        },
+        {
+          "festivalId": 21,
+          "img": "http://img31.mtime.cn/mg/2014/02/24/145149.47569035.jpg",
+          "nameCn": "英国电影和电视艺术学院奖",
+          "nameEn": "BAFTA Awards",
+          "shortName": "英国学院奖"
+        },
+        {
+          "festivalId": 30,
+          "img": "http://img31.mtime.cn/mg/2014/03/15/144353.52545684.jpg",
+          "nameCn": "北京国际电影节",
+          "nameEn": "Beijing International Film Festival",
+          "shortName": "北京电影节"
+        },
+        {
+          "festivalId": 37,
+          "img": "http://img31.mtime.cn/mg/2014/02/24/170840.30152013.jpg",
+          "nameCn": "意大利大卫奖",
+          "nameEn": "David di Donatello Awards",
+          "shortName": "大卫奖"
+        }
+      ],
+      "hasSeenCount": 24755,
+      "hasSeenCountShow": "2.5万",
+      "hotRanking": -1,
+      "img": "http://img31.mtime.cn/mt/2013/12/23/133539.17727433_1280X720X2.jpg",
+      "is3D": false,
+      "isDMAX": false,
+      "isEggHunt": false,
+      "isFavorite": 0,
+      "isFilter": false,
+      "isIMAX": false,
+      "isIMAX3D": false,
+      "isTicket": false,
+      "message": "该操作将清除您对该片的评分！是否确认？",
+      "mins": "175分钟",
+      "movieId": 10968,
+      "movieStatus": 1,
+      "name": "教父",
+      "nameEn": "The Godfather",
+      "overallRating": 9,
+      "personCount": 109,
+      "quizGame": {},
+      "ratingCount": 22326,
+      "ratingCountShow": "2.2万",
+      "releaseArea": "美国",
+      "releaseDate": "19720324",
+      "sensitiveStatus": false,
+      "showCinemaCount": -1,
+      "showDay": -1,
+      "showtimeCount": -1,
+      "stageImg": {
+        "count": 184,
+        "list": [
+          {
+            "imgId": 6943940,
+            "imgUrl": "http://img31.mtime.cn/pi/2015/05/13/163613.31165768_1280X720X2.jpg"
+          },
+          {
+            "imgId": 6944314,
+            "imgUrl": "http://img31.mtime.cn/pi/2015/05/13/163548.91284911_1280X720X2.jpg"
+          },
+          {
+            "imgId": 6938206,
+            "imgUrl": "http://img31.mtime.cn/pi/2015/05/13/163656.32966125_1280X720X2.jpg"
+          },
+          {
+            "imgId": 392783,
+            "imgUrl": "http://img31.mtime.cn/pi/2014/03/07/082040.50483665_1280X720X2.jpg"
+          },
+          {
+            "imgId": 6938207,
+            "imgUrl": "http://img31.mtime.cn/pi/2015/05/13/163656.12064385_1280X720X2.jpg"
+          },
+          {
+            "imgId": 372667,
+            "imgUrl": "http://img31.mtime.cn/pi/2014/03/07/082040.21849881_1280X720X2.jpg"
+          },
+          {
+            "imgId": 6938208,
+            "imgUrl": "http://img31.mtime.cn/pi/2015/05/13/163655.78323117_1280X720X2.jpg"
+          },
+          {
+            "imgId": 347763,
+            "imgUrl": "http://img31.mtime.cn/pi/2014/03/07/082040.50690235_1280X720X2.jpg"
+          },
+          {
+            "imgId": 347755,
+            "imgUrl": "http://img31.mtime.cn/pi/2014/03/07/082040.75818432_1280X720X2.jpg"
+          },
+          {
+            "imgId": 6938209,
+            "imgUrl": "http://img31.mtime.cn/pi/2015/05/13/163655.81044859_1280X720X2.jpg"
+          }
+        ]
+      },
+      "story": "影片讲述了教父唐·科里昂的小儿子迈克尔如何成为新教父的故事，把小说中虚构的纽约黑手党塑造成一个实现美国梦的家族奋斗史。血雨腥风和温情脉脉，在这部里程碑式的黑帮史诗巨片里真实上演。",
+      "style": {
+        "isLeadPage": 0,
+        "leadImg": "https://img2.mtime.cn/mg/.jpg",
+        "leadUrl": ""
+      },
+      "summary": "1945年夏天，美国本部黑手党科莱昂家族首领，“教父”维托·唐·科莱昂为小女儿康妮举行了盛大的婚礼。“教父”有三个儿子：好色的长子逊尼，懦弱的次子弗雷德和刚从二战战场回来的小儿子迈克。其中逊尼是“教父”的得力助手；而迈克虽然精明能干，却对家族的“事业”没什么兴趣。　　　　“教父”是黑手党首领，常干违法的构当。但同时他也是许多弱小平民的保护神，深得人们爱戴。他还有一个准则就是决不贩毒害人。为此他拒绝了毒枭素洛佐的要求，并因此激化了与纽约其它几个黑手党家族的矛盾。圣诞前夕，素洛佐劫持了“教父”的大女婿汤姆，并派人暗杀“教父”。“教父”中枪入院。素洛佐要汤姆设法使逊尼同意毒品买卖，重新谈判。逊尼有勇无谋，他发誓报仇，却无计可施。　　　　迈克去医院探望父亲，他发现保镖已被收买，而警方亦和素洛佐串通一气。各家族间的火并一触即发。迈克制定了一个计策诱使素洛佐和警长前来谈判。在一家小餐馆内，迈克用事先藏在厕所内的手枪击毙了素洛佐和警长。　　　　迈克逃到了西西里，在那里他娶了美丽的阿波萝妮亚为妻，过着田园诗般的生活。而此时，纽约各个黑手党家族间的仇杀却越来越激烈。逊尼也被康妮的丈夫卡洛出卖，被人打得千疮百孔。“教父”伤愈复出，安排各家族间的和解。听到噩耗的迈克也受到了袭击。被收买的保镖法布里奇奥在迈克的车上装了炸弹。迈克虽幸免于难，却痛失爱妻。　　　　迈克于1951年回到了纽约，并和前女友凯结了婚。日益衰老的“教父”将家族首领的位置传给了迈克。在“教父”病故之后，迈克开始了酝酿已久的复仇。他派人刺杀了另两个敌对家族的首领，并亲自杀死了谋害他前妻的法布里奇奥。同时他也命人杀死了卡洛，为逊尼报了仇。　　　　仇敌尽数剪除。康妮因为丈夫被杀而冲进了家门，疯狂地撕打迈克。迈克冷峻地命人把康妮送进了疯人院。他已经成了新一代的“教父”——唐·科莱昂。",
+      "totalNominateAward": 0,
+      "totalWinAward": 0,
+      "type": [
+        "犯罪",
+        "剧情"
+      ],
+      "url": "https://movie.mtime.com/10968/",
+      "userComment": "",
+      "userCommentId": 0,
+      "userImg": "",
+      "userName": "",
+      "userRating": 0,
+      "video": {
+        "count": 7,
+        "hightUrl": "https://vfx.mtime.cn/Video/2008/09/13/mp4/080913144453210452.mp4",
+        "img": "http://img31.mtime.cn/mg/2014/03/12/151200.58604583_235X132X4.jpg",
+        "title": "《教父》三部曲-科波拉重新修复收藏版 制作特辑 蓝光发售预告片",
+        "url": "https://vfx.mtime.cn/Video/2008/09/13/mp4/080913144453210452_480.mp4",
+        "videoId": 13299,
+        "videoSourceType": 1
+      },
+      "wantToSeeCount": 5251,
+      "wantToSeeCountShow": "5251",
+      "wantToSeeNumberShow": "",
+      "year": "1972"
+    },
+    "boxOffice": {
+      "movieId": 10968,
+      "ranking": 0,
+      "todayBox": 0,
+      "todayBoxDes": "",
+      "todayBoxDesUnit": "",
+      "totalBox": 0,
+      "totalBoxDes": "",
+      "totalBoxUnit": ""
+    },
+    "live": {
+      "count": 0,
+      "img": "",
+      "isSubscribe": false,
+      "liveId": 0,
+      "playNumTag": "",
+      "playTag": "",
+      "status": 3,
+      "title": ""
+    },
+    "playState": "2",
+    "playlist": [
+      {
+        "isOpenByBrowser": true,
+        "payRule": "VIP免费",
+        "picUrl": "http://img5.mtime.cn/mg/2018/05/10/163509.88712987.jpg",
+        "playSourceName": "优酷",
+        "playUrl": "https://v.youku.com/v_show/id_XMTMzMDMxMTI2OA==.html?tpa=dW5pb25faWQ9MzAwMDExXzEwMDExMl8wMl8wMQ&refer=shiguangwangneirongjieru_bd.xuyang01_shiguangwang_434655",
+        "playUrlH5": "https://m.youku.com/video/id_XMTMzMDMxMTI2OA==.html?tpa=dW5pb25faWQ9MzAwMDExXzEwMDExMl8wMl8wMQ&refer=shiguangwangneirongjieru_bd.xuyang01_shiguangwang_434655",
+        "playUrlPC": "https://v.youku.com/v_show/id_XMTMzMDMxMTI2OA==.html?tpa=dW5pb25faWQ9MzAwMDExXzEwMDExMl8wMl8wMQ&refer=shiguangwangneirongjieru_bd.xuyang01_shiguangwang_434655",
+        "sourceId": "65207"
+      },
+      {
+        "isOpenByBrowser": true,
+        "payRule": "VIP免费",
+        "picUrl": "http://img5.mtime.cn/mg/2018/05/10/165747.92070197.jpg",
+        "playSourceName": "爱奇艺",
+        "playUrl": "https://m.iqiyi.com/v_19rrg3726w.html?vfm=m_499_sgwa",
+        "playUrlH5": "https://m.iqiyi.com/v_19rrg3726w.html?vfm=m_499_sgwa",
+        "playUrlPC": "https://www.iqiyi.com/v_19rrg3726w.html?vfm=m_499_sgwa",
+        "sourceId": "80631"
+      },
+      {
+        "isOpenByBrowser": true,
+        "payRule": "VIP免费",
+        "picUrl": "http://img5.mtime.cn/mg/2018/05/10/165821.60976511.jpg",
+        "playSourceName": "1905",
+        "playUrl": "https://vip.1905.com/play/604694.shtml?__hz=7143d7fbadfa4693",
+        "playUrlH5": "https://vip.1905.com/play/604694.shtml?__hz=7143d7fbadfa4693",
+        "playUrlPC": "https://vip.1905.com/play/604694.shtml?__hz=7143d7fbadfa4693",
+        "sourceId": "1147"
+      }
+    ],
+    "related": {
+      "goodsCount": 0,
+      "goodsList": [],
+      "relateId": 0,
+      "relatedUrl": "https://mall-wv.mtime.cn/#!/commerce/list/",
+      "type": 0
+    }
+  },
+  "msg": "成功",
+  "showMsg": ""
+}

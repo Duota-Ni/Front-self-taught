@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>散点图示例</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style type="text/css">
+	html, body {
+		width: 100%;
+		height: 100%;
+	}
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	button {
+		width: 100px;
+		border: 1px solid #555;
+	}
+	#container {
+		height: 90%;
+	}
+	</style>
+	<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&libraries=visualization&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77"></script>
+	<script>
+	window.onload = function(){
+		// 创建地图
+		var map = new qq.maps.Map(document.getElementById("container"), {
+			center: new qq.maps.LatLng(39.9,116.4),
+			zoom: 9
+		});
+		// 创建散点图对象
+		var dots = new qq.maps.visualization.Dots({
+			map: map, // 必填参数，指定显示散点图的地图对象
+			style: {
+				fillColor: "#3CF",
+				strokeColor: "#00C",
+				strokeWidth: 1,
+				radius: 8
+			}
+		});
+		// 获取散点数据
+		var data = getDotsData();
+		// 向散点图传入数据
+		dots.setData(data);
+ 
+		// 监听button事件，更改散点图配置参数
+		document.getElementById("setOptions").addEventListener("click", function(e) {
+			var target = e.target;
+			switch (target.id) {
+				case "show":
+					if (dots.visible) {
+						dots.hide(); // 显示散点图
+					} else {
+						dots.show(); // 隐藏散点图
+					}
+					break;
+				case "data":
+					data = getDotsData();
+					dots.setData(data); // 重置散点图数据
+					break;
+				case "style":
+					let style = dots.getStyle(); // 获取点样式
+					style = {
+						fillColor: {
+							0: "rgba(255, 0, 0, 1)",
+							0.2: "rgba(255, 0, 0, 0.7)",
+							0.5: "rgba(255, 0, 0, 0.3)",
+							1: "rgba(255, 0, 0, 0)"
+						},
+						strokeWidth: 0
+					};
+					dots.setStyle(style); // 设置点样式
+					break;
+				case "group":
+					let groupBy = "type";
+					dots.setGroupStyle("a", {
+						fillColor: "#0D0",
+					});
+					dots.setGroupStyle("b", {
+						fillColor: "#FA3"
+					});
+					dots.setGroupBy(groupBy);
+					break;
+				default:
+			}
+		});
+ 
+		function getDotsData(cnt) {
+			let data = [];
+			let center = {
+				lat: 39.9,
+				lng: 116.4
+			};
+      		let typeIds = ["a", "b", "c"];
+			cnt = cnt || 1000;
+			for (let index = 0; index < cnt; index++) {
+				let r = Math.random();
+				let angle = Math.random() * Math.PI * 2;
+				let typeId = typeIds[Math.floor(Math.random() * 3)];
+				data.push({
+					lat: center.lat + r * Math.sin(angle),
+					lng: center.lng + 1.5 * r * Math.cos(angle),
+					type: typeId
+				});
+			}
+			return data;
+		}
+	}
+	</script>
+</head>
+<body>
+	<div id="container"></div>
+	<div id="setOptions">
+		<button id="show">显示/隐藏</button>
+		<button id="data">更新数据</button>
+		<button id="style">改变点样式</button>
+		<button id="group">分组显示</button>
+	</div>
+</body>
+</html>
