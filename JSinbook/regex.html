@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">试一试</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  //var str = "1234567g90123e23";
+ //var str = "99- bojewt in 55555thr ewrw"+"egtr 1 5 6 dfef ad fr 443 gf --"+"86 fd gfg gr qw.";
+ //var str = '<link rel="fdsfd" href="httfp://wwww3.school.com.cn/tiy/t.asp?f=js_regexp_0-9"'+'<link rel="fdsfd" href="https://start.firefoxchina.cn/"'+'<link rel="fdsfd" href="//developer.mozilla.org/zh-CN"'
+ var str = "ufdis pjsdf hfdsfh fdsoi fsd nua\n"+"<i>sada</i> and <i>dsa</i>"
+  //var patt1 =/(?:https?)?\/\/[a-z][a-z0-9-]+[a-z0-9]+/ig ;
+  //var patt1 =/[a-z0-9-]+/ ;
+  var result = str.replace(/<i>(.*?)<\/i>/ig,'<strong>$1<\/strong>');
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
