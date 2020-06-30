@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title></title>
+
+    </head>
+
+    <body>
+
+        <select id="select-some" onchange="alert(this.value)"> 
+
+            <option>sdfsd</option>
+
+            <option>ssdfsdfd</option>
+
+            <option>sdsdfsdfsfdsd</option>
+
+        </select>
+
+        <script>
+
+            var selectSome = document.getElementById("select-some");
+
+            selectSome.addEventListener("change", function () {
+
+                alert(this.value);
+
+            }, false);
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ajax</title>
+</head>
+<body>
+<div class="serverInfo">
+    Server is running on <span data-replace="platform">???</span>
+    with Node <span data-replace="nodeVersion">???</span>.It has been up for 
+    <span data-replace="uptime">???</span>seconds.
+</div>
+<script type="application/javascript">
+    function refreshServerInfo(){
+        const req = new XMLHttpRequest();
+        req.addEventListener('load',function(){
+            console.log(this.responseText);
+        });
+        req.open('GET','http://localhost:7070',true);
+        req.send();
+    }
+    refreshServerInfo();
+
+    req.addEventListener('load',function(){
+        const data = JSON.parse(this.responseText);
+        const serverInfo  = document.querySelector('.serverInfo');
+        //('platform','nodeVersion',and'uptime'):
+        Object.keys(data).forEach(p=>{
+            const replacements = 
+            serverInfo.querySelectorAll(`[data-replace="${p}"]`);
+            for(let r of replacements){
+                r.textContent = data[p];
+            }
+        })
+
+    })
+</script>
+</body>
+</html>
